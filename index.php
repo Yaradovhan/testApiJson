@@ -24,6 +24,7 @@ foreach ($results['campaigns'] as $k => $campaign) {
         'platform' => $platform,
         'minOsVer' => $minOsVer
     ];
+
     $con->prepareExecute($insCamp, $insDataCamp);
     $campId = $con->prepareExecute('SELECT MAX(id) FROM campaigns');
     $campaignsId = $campId->fetch(PDO::FETCH_ASSOC);
@@ -38,7 +39,6 @@ foreach ($results['campaigns'] as $k => $campaign) {
         $reqDeviceId = $list['reqDeviceId'];
         $userFlow = $list['userFlow'];
         $kpi = $list['kpi'];
-        //тут делаю insert в таблицу list из данных что выше + беру lastInsertId(из таблицы campaign)
         $insLists = 'INSERT INTO lists(id, payout, incent, health, offerLink, notes, offerName, reqDeviceId, kpi, userFlow, campaignsId) VALUES (:id, :payout, :incent, :health, :offerLink, :notes, :offerName, :reqDeviceId, :kpi, :userFlow, :campaignsId)';
         $dataInsLists = [
             'id' => $listId,
@@ -53,10 +53,8 @@ foreach ($results['campaigns'] as $k => $campaign) {
             'userFlow' => $userFlow,
             'campaignsId' => $campaignsId['MAX(id)'],
         ];
+
         $con->prepareExecute($insLists, $dataInsLists);
-//        $listId = $con->prepareExecute('SELECT MAX(id) FROM lists');
-//        $lastIdList = $listId->fetchAll(PDO::FETCH_ASSOC);
-//        dd($lastIdList);
         foreach ($list["countries"] as $count) {
             $selCountry = Query::select('country', ['name'])->where(['name'])->build();
             $dataSel = ['name' => $count];
@@ -73,16 +71,52 @@ foreach ($results['campaigns'] as $k => $campaign) {
 
             $idCountryPrepare = $con->prepareExecute($selCountryId, $selCountryIdData);
             $idCoutry = $idCountryPrepare->fetch(PDO::FETCH_ASSOC);
-            $listCoutryIns = Query::insert('list_country',['idList', 'idCountry'])->build();
+            $listCoutryIns = Query::insert('list_country', ['idList', 'idCountry'])->build();
             $listCoutryData = [
                 'idList' => $listId,
                 'idCountry' => $idCoutry['id']
             ];
+            
             $con->prepareExecute($listCoutryIns, $listCoutryData);
         }
+        if ($list["caps"] != false) {
+            foreach ($list["caps"] as $cap) {
+                $selCapsTitles = Query::select('capsTitles', ['id', 'name'])->where(['name'])->build();
+                $dataSelCapsTitles = ['name' => $cap['title']];
+                $stmt = $con->prepareExecute($selCapsTitles, $dataSelCapsTitles);
+                $resCapsTitles = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                if ($resCapsTitles == false) {
+                    $insCapsTitles = Query::insert('capsTitles', ['name'])->build();
+                    $dataInsCapsTitles = ['name' => $cap['title']];
+                    $con->prepareExecute($insCapsTitles, $dataInsCapsTitles);
+                }
 
+                $selCapsTypes = Query::select('capsTypes', ['id', 'name'])->where(['name'])->build();
+                $dataSelCapsTypes = ['name' => $cap['type']];
+                $stmt = $con->prepareExecute($selCapsTypes, $dataSelCapsTypes);
+                $resCapsTypes = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                if ($resCapsTypes == false) {
+                    $insCapsTypes = Query::insert('capsTypes', ['name'])->build();
+                    $dataInsCapsTypes = ['name' => $cap['type']];
+                    $con->prepareExecute($insCapsTypes, $dataInsCapsTypes);
+                }
 
+                $stmt = $con->prepareExecute($selCapsTitles, $dataSelCapsTitles);
+                $resCapsTitles = $stmt->fetch(PDO::FETCH_ASSOC);
+                $stmt = $con->prepareExecute($selCapsTypes, $dataSelCapsTypes);
+                $resCapsTypes = $stmt->fetch(PDO::FETCH_ASSOC);
 
+                $insCaps = Query::insert('caps', ['typeId', 'titleId', 'amount', 'listId'])->build();
+                $dataInsCaps = [
+                    'typeId' => $resCapsTypes['id'],
+                    'titleId' => $resCapsTitles['id'],
+                    'amount' => $cap['amount'],
+                    'listId' => $list['id']
+                ];
+
+                $con->prepareExecute($insCaps, $dataInsCaps);
+            }
+        }
 
     }
 }
