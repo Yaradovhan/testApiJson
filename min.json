@@ -1,0 +1,128 @@
+{
+  "sourceid": "gvo9rJipQDCoZYKLk2v_Sw",
+  "campaigns": [
+    {
+      "icon": "http://lh3.googleusercontent.com/ejipqmzH-gS5N4zE5KHmIc0tk5vUPP9X6881iX4XKo8a7Vh2GO_sSYs01TWUqSTZrM4=w300",
+      "name": "Cafeland - World Kitchen",
+      "platform": "android",
+      "category1": "apps",
+      "category2": "casual",
+      "list": [
+        {
+          "reqdevid": false,
+          "id": "JyNOLzgmBSw7TiFoRANaeEFxUn8",
+          "countries": [
+            "us"
+          ],
+          "payout": 1.91,
+          "incent": false,
+          "health": 2,
+          "offerLink": "http://clicks.mobrand.net/target/t.mobrand.net/tracking/aff/IF9MWTkXT9ORu1iIqAcKQQ/gvo9rJipQDCoZYKLk2v_Sw/JyNOLzgmBSw7TiFoRANaeEFxUn8",
+          "caps": [],
+          "notes": "",
+          "offerName": "Cafeland - World Kitchen",
+          "reqDeviceId": false,
+          "kpi": "RR 15% first day",
+          "userFlow": "Store > DOWNLOAD > OPEN APP within 24h",
+          "blackListedSources": [],
+          "whiteListedSources": []
+        },
+        {
+          "reqdevid": false,
+          "id": "LSlMLzsxHTE1VS4mFFxTeEJyUn5naHB3Dw",
+          "countries": [
+            "us"
+          ],
+          "payout": 0.33,
+          "incent": true,
+          "health": 2,
+          "offerLink": "http://clicks.mobrand.net/target/t.mobrand.net/tracking/aff/IF9MWTkXT9ORu1iIqAcKQQ/gvo9rJipQDCoZYKLk2v_Sw/LSlMLzsxHTE1VS4mFFxTeEJyUn5naHB3Dw",
+          "caps": [],
+          "notes": "",
+          "offerName": "Cafeland - World Kitchen",
+          "reqDeviceId": false,
+          "kpi": null,
+          "userFlow": null,
+          "blackListedSources": [],
+          "whiteListedSources": []
+        }
+      ],
+      "minOsVer": "4.0.3",
+      "bundleId": "com.gamegos.mobile.cafeland"
+    },
+    {
+      "icon": "http://lh3.googleusercontent.com/76EHVNZV54QmXL4y9kstkwSRQRp6CJHUJzXe2n1F_nV_k2wpcS2b9LxSNabdVvcJmg=w300",
+      "name": "PhonePe – UPI Payments, Recharges & Money Transfer",
+      "platform": "android",
+      "category1": "apps",
+      "category2": "finance",
+      "list": [
+        {
+          "reqdevid": false,
+          "id": "OjJQIzAmCjxuD3liQwhQ",
+          "countries": [
+            "in"
+          ],
+          "payout": 1.13,
+          "incent": false,
+          "health": 2,
+          "offerLink": "http://clicks.mobrand.net/target/t.mobrand.net/tracking/aff/IF9MWTkXT9ORu1iIqAcKQQ/gvo9rJipQDCoZYKLk2v_Sw/OjJQIzAmCjxuD3liQwhQ",
+          "caps": [],
+          "notes": "THIS OFFER CAN BE STOPPED IMMEDIATELY WITHOUT 24H PAUSE WARNING! ALL CHANGES ARE DELIVERED VIA API! com.phonepe.app Sign(need):2izNxEyyhJyCb8D0ZryrGj2fkp0RchLY RR 30% Sign(need):TJYJLDWGDWubxREBbhB8IdckQ7tPFvGt",
+          "offerName": "PhonePe – UPI Payments, Recharges & Money Transfer (Android) IN - Non incent",
+          "reqDeviceId": false,
+          "kpi": null,
+          "userFlow": null,
+          "blackListedSources": [],
+          "whiteListedSources": []
+        },
+        {
+          "reqdevid": false,
+          "id": "OjJQIzAmCjxuD3ljRQhY",
+          "countries": [
+            "in"
+          ],
+          "payout": 1.1,
+          "incent": false,
+          "health": 2,
+          "offerLink": "http://clicks.mobrand.net/target/t.mobrand.net/tracking/aff/IF9MWTkXT9ORu1iIqAcKQQ/gvo9rJipQDCoZYKLk2v_Sw/OjJQIzAmCjxuD3ljRQhY",
+          "caps": [],
+          "notes": "THIS OFFER CAN BE STOPPED IMMEDIATELY WITHOUT 24H PAUSE WARNING! ALL CHANGES ARE DELIVERED VIA API! PhonePe is a revolutionary way to make mobile payments in India. From UPI payments to recharges, money transfers to online bill payments, you can do it all on PhonePe. PhonePe is way better than Internet Banking and offers you the safest and fastest online payment experience in India.Things you can do on the PhonePe app -- Send and request money from your contacts anytime, anywhere.- Recharge prepaid Mobile for most major operators/Datacard/DTH connections across the country.- Pay postpaid Landline, Datacard and Mobile Bills for all major operators.- Pay for utilities such as electricity and gas bills.- Check your account balance, save beneficiaries and manage multiple bank accounts.- Get refunds and cashbacks to your bank account in an instant.- Split bills with your friends and settle them right away.- Shop on Flipkart, Myntra, Jabong, and other online shopping websites. PhonePe benefits -- Transact up to Rs.1 lakh per transaction, 24*7.- Get instant refunds and cashbacks from our partner merchants into your PhonePe wallet. -Check wallet balance that can be withdrawn to your bank account. Cashback cannot be withdrawn to any linked bank account and cannot be transferred to other users. Cashback can be redeemed for mobile recharges, bill payments, and used for merchant payments where PhonePe has been integrated as a payment option- Top up your wallet using your UPI enabled bank account or a debit card to make instant payments to anyone.- One-click payments using your PhonePe account at any of our merchant partner locations.- Transact in the language of your choice. English, Hindi, Tamil, Bengali, Telugu, Kannada, Malyalam, Assamese, Gujarati, and Marathi are now live. More languages coming soon! The PhonePe app works over the Unified Payments Interface (UPI) platform developed by the National Payments Corporation of India (NPCI) and is powered by YES Bank. The PhonePe UPI app is safe and secure, meets all your payment and banking needs, and is much better than Internet banking. No need to remember IFSC codes, account numbers, or other inconvenient details. Make instant bank transfers by just using a mobile number or a unique payment identity – your Virtual Payment Address (VPA). PhonePe also provides you with a digital mobile wallet for faster refunds and cashbacks from our merchant partners. You can spend your wallet balance or withdraw it into your linked bank account(s) in one quick swipe. With over 70 billers live on the PhonePe App you can do quick and easy recharges for mobiles, DTH, datacards and also pay gas, electricity, landline and other utility bills.Currently over 40 banks are UPI enabled, with more banks coming soon!Banks currently on UPI: YES Bank (our UPI sponsor), Allahabad Bank, Andhra Bank, Axis Bank, Bank of Baroda (BOB), Bank of Maharashtra, Bank of India, Canara Bank, Catholic Syrian Bank, Central Bank of India, Citibank, City Union Bank, Corporation Bank, DCB Bank, Dena Bank, Federal Bank, HDFC Bank, HSBC Bank, ICICI Bank, IDBI Bank, IDFC Bank, Indusind Bank, Indian Bank, Indian Overseas Bank, Karur Vyasa Bank, Karnataka Bank, Kotak Mahindra Bank, Laxmi Vilas Bank, Oriental Bank of Commerce, Punjab National Bank (PNB), Punjab and Sindh Bank, Ratnakar Bank (RBL), State Bank of India (SBI), South Indian Bank (SIB), Standard Chartered Bank (SCB), TJSB Sahakari Bank, UCO Bank, United Bank of India, Union Bank of India, Vijaya BankFor more details, please visit our website at https://www.phonepe.comPermissions for App and reasons:SMS - This is required to verify Phone no for registrationLocation - This is a requirement by NPCI for UPI transactionsContacts - We use this to for phone numbers to send money to and choose numbers to recharge.Camera - We use this to scan QR code.Storage - We use this to store scanned QR code.Accounts- This is used to prepopulate email id while signing up.Call - This is used to detect single/vs dual sim and let user choose Day 1 Retention Rate: minimum 35%",
+          "offerName": "PhonePe – UPI Payments, Recharges & Money Transfer (Android) IN - Non incent",
+          "reqDeviceId": false,
+          "kpi": null,
+          "userFlow": null,
+          "blackListedSources": [],
+          "whiteListedSources": []
+        },
+        {
+          "reqdevid": false,
+          "id": "JC9XJDo7CWJhWC1qFlUMeEIlBi1oZn4",
+          "countries": [
+            "in"
+          ],
+          "payout": 1.02,
+          "incent": false,
+          "health": 2,
+          "offerLink": "http://clicks.mobrand.net/target/t.mobrand.net/tracking/aff/IF9MWTkXT9ORu1iIqAcKQQ/gvo9rJipQDCoZYKLk2v_Sw/JC9XJDo7CWJhWC1qFlUMeEIlBi1oZn4",
+          "caps": [
+            {
+              "type": "Installs",
+              "title": "Daily Cap",
+              "amount": 22966
+            }
+          ],
+          "notes": "The mutually agreed terms and conditions have been accepted The following are the additional fraud prevention benchmarks will be mandated for all partners running PhonePe through M&C Saatchi Mobile: 1) Click injection - 10 second benchmark - (Click to Open). 2) Incent Fraud - 15% and less retention on Day 2. 3) Click Spamming - 15% and less installs in first 2 hours. 4) Country Mismatch - Installs that are not from India. 5) Wrong app version - Please use latest and updated app versions. 6) IP fraud - 20 installs or more coming in from a same IP address on a single day will be considered as fraud. 7) Click to Install IP Mismatch - If there is high suspicious activity with the click and install IPs, the affected publisher will be flagged. 8) If a Pub ID/Sub Pub ID (the value passed back in the sub_publisher parameter on tracking link) is flagged with more than 40% fraud, the ID in question will not be billable for the month.",
+          "offerName": "PhonePe – UPI Payments, Recharges & Money Transfer - IN Non-Incent",
+          "reqDeviceId": false,
+          "kpi": null,
+          "userFlow": "Download, install and open",
+          "blackListedSources": [],
+          "whiteListedSources": []
+        }
+      ],
+      "minOsVer": "0.0",
+      "bundleId": "com.phonepe.app"
+    }
+  ]
+}
