@@ -121,4 +121,13 @@ foreach ($results['campaigns'] as $k => $campaign) {
     }
 }
 
+$stmt = $con->prepareExecute('SELECT lists.offerName, `lists`.`payout`, CASE WHEN country.margin_percent THEN country.margin_percent ELSE (SELECT defaults.default_margin_percent FROM defaults) END as PRECENT, CASE WHEN caps.amount THEN caps.amount ELSE(SELECT defaults.default_conversion_cap FROM defaults) END as AMOUNT, (`lists`.`payout` * CASE WHEN country.margin_percent THEN country.margin_percent ELSE (SELECT defaults.default_margin_percent FROM defaults) END  * CASE WHEN caps.amount THEN caps.amount ELSE(SELECT defaults.default_conversion_cap FROM defaults) END ) as RESULT
+FROM `lists`
+LEFT JOIN `caps` ON `lists`.`id` = `caps`.`listId` 
+LEFT JOIN `list_country` ON `lists`.`id` = `list_country`.`idList` 
+LEFT JOIN `country` ON `list_country`.`idCountry` = `country`.`id`
+ORDER BY RESULT DESC
+LIMIT 10');
+$res = $stmt->fetchAll(PDO::FETCH_ASSOC);
+dd($res);
 

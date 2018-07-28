@@ -11,5 +11,5 @@ function dd($param)
 define('DSN_PG', 'pgsql');
 define('DSN_MY', 'mysql');
 define('DATABASE', 'dbuser');
-define('USER', 'dbuser');
-define('PASSWORD', 'dbuser');
+define('USER', 'root');
+define('PASSWORD', '');
