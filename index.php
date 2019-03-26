@@ -3,7 +3,6 @@
 require_once 'config.php';
 require_once 'autoload.php';
 
-
 $content = file_get_contents('testApiJson.json');
 
 $results = json_decode($content, true);
